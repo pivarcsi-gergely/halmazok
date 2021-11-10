@@ -72,4 +72,28 @@ public class Set<T> { // T típusu elemek fogadására lesz alkalmas
     public boolean isEquals (Set<T> otherSet) {
         return this.getSize() == otherSet.getSize() && this.isPartOf(otherSet);
     }
+
+    public Set<T> union(Set<T> otherSet) {
+        Set<T> unioSet = new Set<>();
+        for (T element: this.elements) {
+            unioSet.add(element);
+        }
+        for (T element: otherSet.elements) {
+            unioSet.add(element);
+        }
+        return unioSet;
+    }
+
+    public Set<T> intersect(Set<T> otherSet) {
+        Set<T> intersectSet = new Set<>();
+
+        for (T element : this.elements) {
+            for (T otherElement: otherSet.elements) {
+               if (element == otherElement) {
+                   intersectSet.add(element);
+               }
+            }
+        }
+        return intersectSet;
+    }
 }
