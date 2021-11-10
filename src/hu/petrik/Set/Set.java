@@ -23,6 +23,7 @@ public class Set<T> { // T típusu elemek fogadására lesz alkalmas
 
         if (this.elements.contains(element)) {
             this.elements.remove(element);
+            isRemoved = true;
         }
 
         return isRemoved;
