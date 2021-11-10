@@ -39,7 +39,7 @@ public class SzobaKerekpar {
         ferj.add(30);
 
         Set<Integer> unio = feleseg.union(ferj);
-        System.out.println(String.format("%d napon hasznáják a biciklit!", unio.getSize()));
-        System.out.println(String.format("%.1f százalék a szobakerékpár kihasználtsága.", (unio.getSize()/30.0)*100));
+        System.out.println(String.format("%d napon hasznáják a biciklit! 🚲", unio.getSize()));
+        System.out.println(String.format("%.1f százalék a szobakerékpár kihasználtsága. 🚲", (unio.getSize()/30.0)*100));
     }
 }
