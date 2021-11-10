@@ -96,4 +96,13 @@ public class Set<T> { // T típusu elemek fogadására lesz alkalmas
         }
         return intersectSet;
     }
+
+    @Override
+    public String toString() {
+        String s = "";
+        for (T element: this.elements) {
+            s += element + "\n";
+        }
+        return s;
+    }
 }
